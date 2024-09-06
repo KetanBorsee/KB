@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------------About Me section------------------*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .container strong{
+    color:red;
+  }
+  
+  .about-section {
+    padding: 60px 0; /* Reduced padding for better fit */
+    background-color: #fff;
+    background: linear-gradient(to bottom right, #f4f4f4, #fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-content {
+    max-width: 48%; /* Slightly reduced width to fit all content */
+    padding: 20px; /* Reduced padding */
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: left;
+    animation: slideInFromLeft 1.5s linear;     /*scrolling animation is used */
+  }
+  
+  .about-content h2 {
+    font-size: 2.5em; /* Reduced font size */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  
+  .about-content p {
+    font-size: 1.1em; /* Slightly reduced font size */
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-content strong{
+    animation: appear-scroll 1.7s linear;
+  }
+
+  .about-image img {
+    width: 350px; /* Reduced image size */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 70px;
+  }
+  
+  .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48%;
+    animation: slideInFromRight 1.5s linear;     /*scrolling animation is used */;
+  }
+  
+  /* Full-width section for the last paragraph */
+  .about-full-width {
+    background-color: #fafafa;
+    padding: 15px; /* Reduced padding */
+    margin-top: 20px; /* Slightly smaller margin */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    animation: slideInFromBottom 1.5s linear;     /*scrolling animation is used */
+  }
+  
+  .about-full-width p {
+    font-size: 1.3em; /* Reduced font size */
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
+  
+    .about-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .about-content h2 {
+      font-size: 2em;
+    }
+  
+    .about-content p {
+      font-size: 1em;
+    }
+  
+    .about-full-width p {
+      font-size: 1.1em;
+    }
+  }
+
+  @media(max-width:416px){
+    .about-image {
+       margin-left: 40px;
+      }
+  }
+  
+  
+
+
+
+
+/*------------------About Me  section------------------*/
+
+
+  /*-------------------internship & experience section------------------*/
+
+  #internships {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#internships h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 10%;
+
+}
+
+.internship-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.2s;
+
+    animation: appear linear;               /*scrolling animation*/
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+}
+
+.internship-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 1rem;
+   
+}
+
+.internship-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    padding-bottom: .3rem;
+}
+
+.internship-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.internship-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+
+
+/*------------internship & experience section------------------*/
+
+
+
+
+
+                           /*-----------------------------------education section------------------*/
+
+#education {
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 10%;
+    gap: 20px;
+}
+
+.education-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+
+    animation: appear linear;               /*scrolling animation*/
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.education-card #score-card{
+    font-size: 1.4rem;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.education-card #score-card span{
+    font-weight: bold;
+    color: red;
+}
+
+
+/*----------education section------------------*/
+
+
+
+/*-----------------------------------certification section------------------*/
+#certifications {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.certification-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s;
+
+    animation: appear linear;               /*scrolling animation*/
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+}
+
+.certification-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.certification-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.certification-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/*---------certification section------------------*/
+
+
+
+
+
+
+/*-----------------------------scrolling animation------------------------------- */
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes appear-scroll{
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+
+/* Keyframes for text sliding from left to actual position */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0; /* Starts invisible */
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1; /* Fully visible at the end */
+    }
+  }
+
+  /* Keyframes for text sliding from right to actual position */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); /* Start off-screen from the right */
+      opacity: 0; /* Starts invisible */
+    }
+    100% {
+      transform: translateX(0); /* Move to the actual position */
+      opacity: 1; /* Fully visible at the end */
+    }
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%); /* Start off-screen from the bottom */
+      opacity: 0; /* Starts invisible */
+    }
+    100% {
+      transform: translateY(0); /* Move to the actual position */
+      opacity: 1; /* Fully visible at the end */
+    }
+  }
+
+  /* Keyframes for text sliding from top to actual position */
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%); /* Start off-screen from the top */
+      opacity: 0; /* Starts invisible */
+    }
+    100% {
+      transform: translateY(0); /* Move to the actual position */
+      opacity: 1; /* Fully visible at the end */
+    }
+  }
+
+
+
+
+  
